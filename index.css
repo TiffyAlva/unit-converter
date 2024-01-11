@@ -1,3 +1,14 @@
 body {
     margin: 0;
+    padding: 2rem;
+    background-color: rgba(28, 28, 28, 1);
+    color: rgba(53, 53, 53, 1);
+    font-family: 'Inter', system-ui;
+    font-weight: 400; 
+    font-size: .875rem;
+    line-height: 1.5;
+    text-align: center;    
+    display: grid;
+    place-content: center;
+    min-height: 100dvh;
 }
