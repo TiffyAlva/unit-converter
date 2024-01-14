@@ -25,11 +25,6 @@ body {
    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-
-.main {
-    padding: 36px, 25px;
-}
-
 header {
     display: flex;
     flex-direction: column;
@@ -49,8 +44,21 @@ header {
     gap: 16px;
     letter-spacing: -0.5px;
 
-    
 }
+
+.num-input {
+    border: 2px solid #B295FF;
+    border-radius: 5px;
+    background-color: transparent;
+    color:#FFFFFF;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 800;
+    text-align: center;
+    line-height: 24.393px;
+    width: 117px;
+}
+    
 
 /*button*/
 #btn-convert {
@@ -79,6 +87,11 @@ header {
 
 
 /*main*/
+.main {
+    padding: 36px, 25px;
+}
+
+
 #length-el, #volume-el, #mass-el {
     color:white;
     font-style: normal;
