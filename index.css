@@ -55,10 +55,32 @@ header {
     font-style: normal;
     font-weight: 800;
     text-align: center;
-    line-height: 24.393px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 80px;
     width: 150px;
+    height: 80px;
 }
-    
+
+/*Style the appearance of the number input field*/
+.num-input[type=number] {
+    -moz-appearance: textfield;
+    appearance: none;
+}
+
+/*Remove the default appearance (style)*/
+.num-input::-webkit-outer-spin-button,
+.num-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/*Remove focus outline */
+.num-input:focus {
+    outline: none;
+}
+
 
 /*button*/
 #btn-convert {
@@ -76,6 +98,7 @@ header {
    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
    font-style: normal;
    transition: background-color 0.3s ease;
+   cursor: pointer;
 
    }
 
