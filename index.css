@@ -48,6 +48,10 @@ header {
 
 }
 
+::placeholder {
+    color: #FFFFFF;
+}
+
 .num-input {
     border: 2px solid #B295FF;
     border-radius: 5px;
