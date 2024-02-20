@@ -9,44 +9,48 @@ body {
     display: grid;
     place-content: center;
     min-height: 100vh;
-
 }
 
 /*container*/
 .container {
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* Maximum width of the container */
+    margin: 0 auto; /* Center the container */
+    padding: 20px;
 }
     
    
 
 .card {
-   position: relative;
+   width: 100%; /* Make the card expand to the container's width */
+   /* box-shadow: 0 4px 8px rgba(0,0,0,0.1); */
+   box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
    padding: 20px;
-   border-radius: 8px;
-   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
    
 }
 
 header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background-color: #6943ff;
     color: #FFFFFF;
-    font-size: 15px;
-    font-weight: 800;
-    font-style: normal;
-    line-height: 38px;
-    letter-spacing: -0.84px;
-    padding: 5px 15px 5px 15px;
-    width: 500px;
     height: 285px;
-    flex-shrink: 0;
-    gap: 16px;
-    letter-spacing: -0.5px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 20px;
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+
 
 }
+
 
 ::placeholder {
     color: #FFFFFF;
@@ -118,7 +122,9 @@ header {
 
 /*main*/
 .main {
-    padding: 36px, 25px;
+    width: 100%; /* Make the main content take up most of the container width */
+    max-width: 800px; /* Maximum width to ensure content does not stretch too far on larger screens */
+    margin: 20px auto; /* Center the main content and provide some spacing */
 }
 
 
@@ -147,6 +153,7 @@ article {
     align-items: center; 
     text-align: center; 
     padding: 20px;
+    
 
 }
 
@@ -162,4 +169,18 @@ h2 {
     margin-bottom: 10px;
 }
 
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
 
+    .card {
+        padding: 10px;
+    }
+    
+    .main {
+        width: 95%; /* Allow the main content to take up slightly more space on smaller screens */
+        margin: 10px auto;
+    }
+}
