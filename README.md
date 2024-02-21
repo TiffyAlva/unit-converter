@@ -1,11 +1,4 @@
-# coe0543cb9bd7a59afb2269f2
 
-Quick start:
-
-```
-$ npm install
-$ npm start
-````
 
 Head over to https://vitejs.dev/ to learn more about using vite
 ## About Scrimba
