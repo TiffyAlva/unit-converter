@@ -172,15 +172,16 @@ h2 {
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .container {
-        padding: 10px;
+        max-width: 95%; /* Adjust the maximum width for smaller screens */
+        margin: 0 auto; /* Center the container horizontally */
     }
 
     .card {
-        padding: 10px;
+        width: 95%; /* Make the card take up slightly less width on smaller screens */
     }
-    
+
     .main {
-        width: 95%; /* Allow the main content to take up slightly more space on smaller screens */
-        margin: 10px auto;
+        max-width: 95%; /* Adjust the maximum width for smaller screens */
+        margin: 0 auto; /* Center the main content horizontally */
     }
 }
